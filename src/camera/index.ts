@@ -3,8 +3,8 @@ import * as THREE from "three";
 let height = window.innerHeight;
 let width = window.innerWidth;
 export function createCamera(): THREE.PerspectiveCamera {
-  const camera = new THREE.PerspectiveCamera(70, width / height, 0.01, 1000);
-  camera.position.z = 1;
+  const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+  camera.position.z = 7;
   return camera;
 }
 
